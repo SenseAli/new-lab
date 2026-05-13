@@ -1,0 +1,29 @@
+package com.example;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+
+public class NewTest
+        extends TestCase
+{
+
+    public Test( String testName )
+    {
+        super( testName );
+    }
+
+
+    public static NewTest suite()
+    {
+        return new TestSuite( com.example.NewTest.class );
+    }
+
+
+    public void testApp()
+    {
+        assertTrue( true );
+    }
+}
+
